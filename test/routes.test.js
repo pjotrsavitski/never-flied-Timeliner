@@ -64,7 +64,7 @@ describe('Routes', function() {
     agent
       .get('/404')
       .expect('Content-Type', /html/)
-      .expect(404, done);
+      .expect(200, done);
   });
   
 });
